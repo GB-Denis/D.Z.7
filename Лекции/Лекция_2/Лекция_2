@@ -1,0 +1,156 @@
+# colors = ['red', 'green', 'blue123']
+# data = open('file.txt', 'a')
+# # data.writelines(colors)
+# data.write('Line 121\n')
+# data.write('Line 131\n')
+# data.close()
+
+## ИЛИ
+
+# with open('file.txt', 'a') as data:
+#     data.write('line 1111\n')
+#     data.write('line 2222\n')
+ 
+##  Читать данные с файла
+
+# path = 'file.txt'
+# data = open(path, 'r')
+# for line in data:
+#     print(line)
+# data.close()
+
+# exit()
+
+##
+# def new_string(symbol, count = 3):
+#     return symbol * count
+
+# print(new_string('!', 5))     #!!!!!
+# print(new_string('!'))        #!!!
+# print(new_string(4))          #12
+
+
+##
+
+
+# def concatenatio(*params):
+#     res: str = ""
+#     for item in params:
+#         res +=item
+#     return res
+
+# # print(concatenatio('a', 's', 'd', 'w'))  #asdw
+# # print(concatenatio('a', '1', 'd', '2'))  #a1d2
+# print(concatenatio('1', '2', '3', '4'))  #TypeError:...
+
+
+# Рекурсия
+
+# def fib(n):
+#     if n in [1, 2]:
+#         return 1
+#     else:
+#         return fib(n-1) + fib(n-2)
+
+# list = []
+# for e in range(1, 10):
+#     list.append(fib(e))
+# print(list)
+
+
+#Кортеж
+
+# a = (3, 4, 5)
+# print(a)
+# print(a[-2])
+
+# for item in a:
+#     print(item)
+
+
+#Словари
+
+# dictionary = {}
+# dictionary = \
+#     {
+#         'up': '↑',
+#         'left': '←',
+#         'down': '↓',
+#         'right': '→'
+#     }
+# print(dictionary)    #{'up': '↑', 'left': '←', 'down': '↓', 'right': '→'}
+# print(dictionary['left'])   #←
+
+# for v in dictionary:
+#     print(dictionary[v])
+
+
+#Множества
+
+# colors = {'red', 'green', 'blue'}
+# print(colors)   #{'green', 'red', 'blue'}
+# colors.add('red')
+# print(colors)   #{'green', 'red', 'blue'}
+# colors.add('gray')
+# print(colors)   #{'green', 'red', 'gray', 'blue'}
+# colors.remove('red')
+# print(colors)   #{'green', 'gray', 'blue'}
+# colors.discard('red')
+# print(colors)   #{'green', 'gray', 'blue'}
+# colors.clear()
+# print(colors)   #set()
+
+
+
+#Или
+
+# a = {1,2,3,5,8}
+# b = {2,5,8,13,21}
+# c = a.copy()
+# u = a.union(b)
+# i = a.intersection(b)
+# dl = a.difference(b)
+# dr = b.difference(a)
+
+# q = a\
+#     .union(b) \
+#     .difference(a.intersection(b))
+
+# s = frozenset(a)
+
+
+
+#Списки
+
+# list1 = [1,2,3,4,5]
+# list2 = list1
+# list1[0] = 123
+# list2[1] = 333
+# for e in list1:
+#     print(e)
+
+# print()
+
+# for e in list2:
+#     print(e)
+
+#Удаление последнего элемента списка
+
+# list1 = [1,2,3,4,5]
+
+# print(len(list1))
+# print(list1.pop(2))   #Удаление 3 элемента
+# print(list1)
+# print(list1.pop())    #Удаление последнего элемента
+# print(list1)
+# print(list1.insert(2, 11))   #На 3 элемент ставим значение 11
+# print(list1)
+# print(list1.append(17))    #Добавление значения в конец
+# print(list1)
+
+
+
+
+
+
+
